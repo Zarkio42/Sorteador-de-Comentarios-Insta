@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabrica Rewards</title>
+</head>
+
+<body>
+    <center>
+        <h1>Você sorteou {{number}} vencedor(es):</h1>
+    </center>
+
+    <center>
+        <p>A publicação teve {{comments}} comentários</p>
+        <h3>
+            {% for winner in result %}
+            <p>{{winner}}</p>
+            {% endfor %}
+        </h3>
+        <form action="/" method="get">
+            <p><button>Realizar outro sorteio</button></p>
+            </p>
+    </center>
+</body>
+
+</html>
