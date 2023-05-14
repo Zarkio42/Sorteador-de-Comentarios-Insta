@@ -36,7 +36,7 @@ def sorteador(url, number, remove_repeated):
     #login
     for char in username():
         input_username.send_keys(char)
-        time.sleep(0.3)  # 0.2 second delay entre caracteres.
+        time.sleep(0.2)  # 0.2 second delay entre caracteres.
     for char in password():
         input_password.send_keys(char)
         time.sleep(0.2) # 0.2 second delay entre caracteres.
@@ -49,14 +49,14 @@ def sorteador(url, number, remove_repeated):
         button_dont_save = driver.find_element('xpath', '/html/body/div[2]/div/div/div/div[1]/div/div/div/div[1]/div[1]/div[2]/section/main/div/div/div/div/button')
         sleep(1)
         button_dont_save.click()
-        sleep(3)
+        sleep(1)
     except:
         pass
     try:
         button_dont_notify = driver.find_element('xpath', '/html/body/div[2]/div/div/div/div[2]/div/div/div[1]/div/div[2]/div/div/div/div/div[2]/div/div/div[3]/button[2]')
         sleep(1)
         button_dont_notify.click()
-        sleep(3)
+        sleep(1)
     except:
         pass
 
@@ -76,9 +76,8 @@ def sorteador(url, number, remove_repeated):
             #Click the load more comments button
             # Clica no botão de carregar mais comentários
             button_more_comments.click()
-            print('finalmente')
         except:
-            print('Sem resultados')
+            print('Botão não encontrado ou Sem resultados')
             False
             break
 

@@ -6,23 +6,25 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/style.css">
   <title>Fabrica Rewards</title>
 </head>
 
 <body>
   <center>
     <h1>Sorteio do Instagram</h1>
-    <p1>Insira abaixo a url de uma postagem</p1>
+
+  <div class="options"> 
     <form action="/result" method="get">
-      <p><input placeholder='Insira aquia a url de um post' name='url' required></p>
+      <p>Insira abaixo sua URL</p>
+      <p>
+        <input id="url_input" placeholder='Insira aqui a url do instagram' name='url' required>
+      </p>
       <p>Quantos vencedores você deseja?</p>
       <p>
-        <input type="radio" id="1" name="winners" value="1" style="cursor: pointer;" required><label for="1">1
-          vencedor</label>
-        <input type="radio" id="2" name="winners" value="2" style="cursor: pointer;" required><label for="2">2
-          vencedores</label>
-        <input type="radio" id="3" name="winners" value="3" style="cursor: pointer;" required><label for="3">3
-          vencedores</label>
+        <input type="radio" id="1" name="winners" value="1" style="cursor: pointer;" required><label for="1"> 1 </label>
+        <input type="radio" id="2" name="winners" value="2" style="cursor: pointer;" required><label for="2"> 2 </label>
+        <input type="radio" id="3" name="winners" value="3" style="cursor: pointer;" required><label for="3"> 3 </label>
       </p>
       <p>Permitir comentários repetidos?</p>
       <p>
@@ -31,8 +33,10 @@
         <input type="radio" name="remove_repeated" id="2" value="on" style="cursor: pointer;"><label for="2">Não
           Permitir</label>
       </p>
-      <p><button style="cursor: pointer;">Sortear vencedor</button></p>
+      <p><button id="button_on">Sortear vencedor</button></p>
     </form>
+  </div>
+
   </center>
 </body>
 

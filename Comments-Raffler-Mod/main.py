@@ -5,7 +5,8 @@ from sorteador import sorteador
 # O flask é utilizado para receber as informações da página HTML, rotas são criadas e redirecionam para algum lugar.
 # É aqui que você deve executar o programa para que ele funcione!
 
-app = Flask("Sorteio")
+
+app = Flask("Sorteio", static_url_path='/static')
 @app.route('/')
 def index():
   return render_template('index.html')
