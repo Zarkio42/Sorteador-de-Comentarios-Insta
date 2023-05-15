@@ -11,7 +11,7 @@ h1{
     padding: 25px;
     height: auto;
     display: grid;
-    background-color: #17b1b9;
+    background-color: #606060;
     width: 35%;
     border-radius: 30px;
 }
@@ -29,7 +29,7 @@ p{
 }
 
 #button_on{
-    background-color: #e5be00;
+    background-color: #20df52;
     padding: 15px;
     cursor: pointer;
     border: none;

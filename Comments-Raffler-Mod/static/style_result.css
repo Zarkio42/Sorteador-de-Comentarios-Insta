@@ -1,0 +1,17 @@
+    *{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    #button_return{
+    padding: 15px;
+    border: none;
+    color: white;
+    background: #20df52;
+    border-radius: 30px;
+    font-size: 14pt;
+    font-weight: 700;
+    }
+
+    #p_winner{
+        font-size: 22pt
+    }
