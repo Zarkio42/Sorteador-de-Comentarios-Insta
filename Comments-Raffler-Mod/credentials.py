@@ -3,8 +3,8 @@
 
 
 def username():
-    username = "pedrin_ofeitosa"
+    username = ""
     return username
 def password():
-    password = "Ab4A@-Ux56"
+    password = ""
     return password
